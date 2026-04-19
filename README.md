@@ -5,11 +5,11 @@
 
 ## Project Overview
 
-An advanced Power BI analytical solution built on the Olist Brazilian
+A Power BI analytical solution built on the Olist Brazilian
 E-Commerce dataset, covering 99,441 real orders placed across Brazil
 between September 2016 and October 2018. The dashboard gives
-management, the logistics team and the product team a single platform
-to monitor revenue, delivery performance, customer satisfaction and
+management, the logistics team and the product team on a single platform
+to monitor revenue, delivery performance, customer satisfaction, and
 geographic demand.
 
 ---
@@ -37,7 +37,7 @@ This project addresses the following business questions:
    current concentration a strategic risk?
 2. How does delivery performance affect customer satisfaction?
 3. Which Brazilian states are underserved and represent growth
-   opportunity?
+   opportunities?
 4. Is revenue growth sustainable year-over-year?
 5. What is driving the mid-2018 revenue slowdown?
 
@@ -74,14 +74,14 @@ This project addresses the following business questions:
 1. Downloaded all 7 CSV files from Kaggle and inspected structures
 2. Documented dataset description, business problem and suitability
 3. Imported all 8 files into Power BI via Power Query
-4. Applied 10 transformation steps including deduplication,
-   category translation merge, payment aggregation and delivery columns
-5. Built star schema with 2 fact tables, 5 dimension tables and DimDate
+4. Applied 10 transformation steps, including deduplication,
+   category translation, merge, payment aggregation and delivery columns
+5. Built a star schema with 2 fact tables, 5 dimension tables and DimDate
 6. Created 12 DAX measures and 2 calculated columns in _Measures table
-7. Designed 3-page interactive dashboard with 18 visuals total
+7. Designed a 3-page interactive dashboard with 18 visuals total
 8. Configured drillthrough, cross-filtering, tooltips and bookmarks
 9. Documented 5 insights and 3 actionable recommendations
-10. Uploaded all files to GitHub with structured README
+10. Uploaded all files to GitHub with a structured README
 
 ---
 
@@ -89,7 +89,7 @@ This project addresses the following business questions:
 
 | Page | Name | Key Visuals |
 |------|------|-------------|
-| 1 | Executive Summary | 4 KPI cards, monthly line chart, top 10 bar, donut, filled state map, 3 slicers |
+| 1 | Executive Summary | 4 KPI cards, monthly line chart, top 10 bar, doughnut, filled state map, 3 slicers |
 | 2 | Detailed Analysis | Matrix drill-down, scatter chart, waterfall, 100% stacked bar, top 10 sellers |
 | 3 | Performance and Geography | YTD area chart, on-time gauge, decomposition tree, map, delivery KPI, insight text box |
 
@@ -117,19 +117,19 @@ This project addresses the following business questions:
 ## Key Insights
 
 1. Top 3 categories account for 35%+ of revenue - concentration risk
-2. Delivery under 7 days averages a review score above 4.2, over 20 days drops below 3.0
-3. São Paulo accounts for 40%+ of orders while northern states are severely underserved
-4. Over 73% of orders use credit card installment plans
-5. 2018 revenue slowdown is concentrated in electronics, not platform-wide
+2. Delivery under 7 days averages a review score above 4.2; over 20 days drops below 3.0
+3. São Paulo accounts for 40%+ of orders, while northern states are severely underserved
+4. Over 73% of orders use credit card instalment plans
+5. The 2018 revenue slowdown is concentrated in electronics, not platform-wide
 
 ---
 
 ## Challenges Encountered
 
-- Product category names were in Portuguese, so I merged translation table in Power Query
+- Product category names were in Portuguese, so I merged the translation table in Power Query
 - Payments had multiple rows per order_id, I grouped by order_id and summed values
 - Null delivery dates on some delivered orders, I filtered out in Power Query
-- DimDate required marking as Date Table for time intelligence functions to work
+- DimDate required marking as a Date Table for time intelligence functions to work
 - All relationships set to Single cross-filter direction to avoid circular dependency errors
 
 ---
@@ -140,7 +140,7 @@ The dashboard transforms 7 raw CSV files into a complete BI solution
 giving management actionable intelligence on revenue, logistics,
 satisfaction and geography. The most significant finding is that
 delivery time directly determines customer satisfaction, and the
-geographic analysis shows a clear opportunity to grow order volumes
+Geographic analysis shows a clear opportunity to grow order volumes
 in underserved northern states.
 
 ---
