@@ -8,13 +8,13 @@
 ## Dashboard Preview
 
 ### Page 1 - Brazilian E-Commerce Performance Dashboard
-[![dashboard-page-1](image.png)]
+[![dashboard-page-1](Dashboard_Images\image.png)]
 
 ### Page 2 - Detailed Sales and Product Analysis
-[![dashborad-page-2](image-1.png)]
+[![dashborad-page-2](Dashboard_Images\image-1.png)]
 
 ### Page 3 - Performance Monitoring and Geographic Analysis
-[![alt text](image-2.png)]
+[![alt text](Dashboard_Images\image-2.png)]
 
 ---
 
