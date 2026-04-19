@@ -1,19 +1,19 @@
 # Brazilian E-Commerce Business Intelligence Dashboard
 
-**DSA 3050A — Business Intelligence and Visualization**
+**DSA 3050A - Business Intelligence and Visualization**
 **Faith Mwangi | ID: 954 | USIU-Africa | SS 2026**
 
 ---
 
 ## Dashboard Preview
 
-### Page 1 — Brazilian E-Commerce Performance Dashboard
+### Page 1 - Brazilian E-Commerce Performance Dashboard
 [![dashboard-page-1](image.png)]
 
-### Page 2 — Detailed Sales and Product Analysis
+### Page 2 - Detailed Sales and Product Analysis
 [![dashborad-page-2](image-1.png)]
 
-### Page 3 — Performance Monitoring and Geographic Analysis
+### Page 3 - Performance Monitoring and Geographic Analysis
 [![alt text](image-2.png)]
 
 ---
@@ -53,7 +53,6 @@ This project addresses the following business questions:
 | olist_order_reviews_dataset.csv | 99,224 | order_id, review_score | Satisfaction |
 | olist_products_dataset.csv | 32,951 | product_id, product_category_name | Product dimension |
 | olist_customers_dataset.csv | 99,441 | customer_id, customer_state, zip_code_prefix | Customer dimension |
-| olist_geolocation_dataset.csv | ~1M raw / ~99k deduped | zip_prefix, lat, lng | Geo dimension |
 | product_category_name_translation.csv | 71 | category_name, category_name_english | Translation |
 
 **Source:** Kaggle — Brazilian E-Commerce Public Dataset by Olist
@@ -72,10 +71,10 @@ This project addresses the following business questions:
 
 ## Steps Followed
 
-1. Downloaded all 8 CSV files from Kaggle and inspected structures
+1. Downloaded all 7 CSV files from Kaggle and inspected structures
 2. Documented dataset description, business problem and suitability
 3. Imported all 8 files into Power BI via Power Query
-4. Applied 10 transformation steps including geolocation deduplication,
+4. Applied 10 transformation steps including deduplication,
    category translation merge, payment aggregation and delivery columns
 5. Built star schema with 2 fact tables, 5 dimension tables and DimDate
 6. Created 12 DAX measures and 2 calculated columns in _Measures table
@@ -117,7 +116,7 @@ This project addresses the following business questions:
 
 ## Key Insights
 
-1. Top 3 categories account for 35%+ of revenue — concentration risk
+1. Top 3 categories account for 35%+ of revenue - concentration risk
 2. Delivery under 7 days averages a review score above 4.2, over 20 days drops below 3.0
 3. São Paulo accounts for 40%+ of orders while northern states are severely underserved
 4. Over 73% of orders use credit card installment plans
@@ -127,10 +126,9 @@ This project addresses the following business questions:
 
 ## Challenges Encountered
 
-- Product category names were in Portuguese — merged translation table in Power Query
-- Geolocation file had ~1M rows with duplicates — deduplicated on zip code prefix
-- Payments had multiple rows per order_id — grouped by order_id and summed values
-- Null delivery dates on some delivered orders — filtered out in Power Query
+- Product category names were in Portuguese, so I merged translation table in Power Query
+- Payments had multiple rows per order_id, I grouped by order_id and summed values
+- Null delivery dates on some delivered orders, I filtered out in Power Query
 - DimDate required marking as Date Table for time intelligence functions to work
 - All relationships set to Single cross-filter direction to avoid circular dependency errors
 
@@ -138,7 +136,7 @@ This project addresses the following business questions:
 
 ## Conclusion
 
-The dashboard transforms 8 raw CSV files into a complete BI solution
+The dashboard transforms 7 raw CSV files into a complete BI solution
 giving management actionable intelligence on revenue, logistics,
 satisfaction and geography. The most significant finding is that
 delivery time directly determines customer satisfaction, and the
@@ -152,6 +150,8 @@ in underserved northern states.
 Full project report available in the /report folder.
 
 ---
+Faith Mwangi
+muthoninduta@gmail.com
 
 *Dataset by Olist via Kaggle · CC BY-NC-SA 4.0*
-*Built for DSA 3050A End Semester Examination · USIU-Africa · SS 2026* 
+*Built for DSA 3050A End Semester Examination · USIU-Africa* 
