@@ -3,6 +3,15 @@
 **DSA 3050A - Business Intelligence and Visualization**
 **Faith Mwangi | ID: 954 | USIU-Africa | SS 2026**
 
+## Project Overview
+
+An advanced Power BI analytical solution built on the Olist Brazilian
+E-Commerce dataset, covering 99,441 real orders placed across Brazil
+between September 2016 and October 2018. The dashboard gives
+management, the logistics team and the product team a single platform
+to monitor revenue, delivery performance, customer satisfaction and
+geographic demand.
+
 ---
 
 ## Dashboard Preview
@@ -19,16 +28,6 @@
 
 ---
 
-## Project Overview
-
-An advanced Power BI analytical solution built on the Olist Brazilian
-E-Commerce dataset, covering 99,441 real orders placed across Brazil
-between September 2016 and October 2018. The dashboard gives
-management, the logistics team and the product team a single platform
-to monitor revenue, delivery performance, customer satisfaction and
-geographic demand.
-
----
 
 ## Problem Statement
 
